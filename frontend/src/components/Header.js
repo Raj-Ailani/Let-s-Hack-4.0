@@ -1,0 +1,50 @@
+import React,{useState} from 'react'
+import { Collapse, Container, Nav, Navbar,  NavbarToggler, NavItem } from 'reactstrap'
+import {  Link, NavLink} from 'react-router-dom';
+
+
+
+
+const Header = () => {
+    const [isNavOpen,toggleNav] = useState(false)
+   
+  
+
+    return (
+        <div id='header'>
+                      
+            <Navbar id='navbar' expand='lg' fixed-top>
+   
+               
+                <Container>
+                    <NavbarToggler id='toggle' onClick={()=>toggleNav(!isNavOpen)}>Menu <i className='fa fa-bars'></i></NavbarToggler>
+                    <Collapse isOpen={isNavOpen} navbar>
+                        <Nav  className="ml-auto"  id='nav-items' >
+                            <NavItem id="items">
+                              <NavLink to='/' onClick={()=>toggleNav(false)}>  Home </NavLink>
+                            </NavItem>
+                            <NavItem id="items">
+                            <NavLink to='/about' onClick={()=>toggleNav(false)}>About Project</NavLink>
+                            </NavItem >
+                            <NavItem id="items">
+                            <NavLink to='/demo'  onClick={()=>toggleNav(false)}>  Demo</NavLink>
+                            </NavItem > 
+                        
+                        </Nav>
+                
+                    </Collapse>
+
+                    
+                </Container>
+                
+            </Navbar>
+        
+          
+      
+            
+           
+        </div>
+    )
+}
+
+export default Header

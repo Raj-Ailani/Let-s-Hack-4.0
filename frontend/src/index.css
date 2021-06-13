@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  
+  #navbar{
+    margin-top: 20px;
+  }
+  
+  #logo-cont{
+    width: 100px;
+    margin: 0px;
+    
+  }
+  
+  #logo{
+    width: 100%;
+    object-fit: contain;
+  }
+  #toggle{
+    color: black;
+  }
+  
+  #items{
+    margin-left: 0px;
+    padding: 0px;
+  }
+  
+  #items a{
+    margin-right: 50px;
+    color: black;
+    font-family: 'Days One', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  #landing-cont{
+    text-align: center;
+    margin-top: 150px;
+  
+  }
+  
+  #landing-logo{
+    width: 150px;
+    display: inline;
+  
+  }
+  
+  #landing-cont h2{
+    color: white;
+    display: inline;
+    font-family: 'Days One', sans-serif;
+    font-size: 50px;
+  
+  }
+  
+  #landing-desp-cont{
+    text-align: center;
+  }
+  
+  #landing-desp-cont p {
+    color: white;
+    font-family: 'Days One', sans-serif;
+    font-size: 25px;
+  }
+  
+  #landing-pic-cont{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  z-index: -1;
+  }
+  
+  #landing-pic{
+    width: 100%;
+  }
+  
+  
+  #one{
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+  }
+  
+  #one-1 p{
+    display: inline;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
+    border: 1px solid white;
+    font-family: 'Days One', sans-serif;
+    text-decoration: none;
+  }
+  
+  #one-1 a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Days One', sans-serif;
+  }
+  
+  #about-main h1{
+    font-family: 'Days One', sans-serif;
+  
+  }
+  #about-main {
+    font-family: 'Days One', sans-serif;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+  #about-img{
+    height: 735px;
+  
+  }
+  
+  #about-main p{
+    color: black;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+  #about-main   a{ 
+    text-decoration: none;
+    margin-top: 50px;
+    font-size: 20px;
+    color: blue;  
+  
+  }
+  
+  #about-main a :hover{ 
+    color: green;
+    text-decoration: none;
+  
+  }
+  
+  #btn-cont{
+  
+    width: 200px;
+    margin-top: 20px;
+  }
+  
+  #btn-cont button{
+    text-align: center;
+  
+    margin-top: 50px;
+    
+  }
+  
+  #loading-cont {
+    margin-top: 50px;
+      width: 200px;
+  }
