@@ -19,15 +19,18 @@ const Header = () => {
                 <Container>
                     <NavbarToggler id='toggle' onClick={()=>toggleNav(!isNavOpen)}>Menu <i className='fa fa-bars'></i></NavbarToggler>
                     <Collapse isOpen={isNavOpen} navbar>
-                        <Nav  className="ml-auto"  id='nav-items' >
+                        <Nav  id='nav-items' >
                             <NavItem id="items">
                               <NavLink to='/' onClick={()=>toggleNav(false)}>  Home </NavLink>
                             </NavItem>
                             <NavItem id="items">
-                            <NavLink to='/about' onClick={()=>toggleNav(false)}>About Project</NavLink>
+                            <NavLink to='/about' onClick={()=>toggleNav(false)}>About Us</NavLink>
                             </NavItem >
                             <NavItem id="items">
-                            <NavLink to='/demo'  onClick={()=>toggleNav(false)}>  Demo</NavLink>
+                            <NavLink to='/demo'  onClick={()=>toggleNav(false)}>  Project</NavLink>
+                            </NavItem > 
+                            <NavItem id="items">
+                            <NavLink to='/contact'  onClick={()=>toggleNav(false)}>  Contact Us</NavLink>
                             </NavItem > 
                         
                         </Nav>
