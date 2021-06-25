@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Collapse, Container, Nav, Navbar,  NavbarToggler, NavItem } from 'reactstrap'
-import {  Link, NavLink} from 'react-router-dom';
+import {  NavLink} from 'react-router-dom';
 
 
 
@@ -24,14 +24,25 @@ const Header = () => {
                               <NavLink to='/' onClick={()=>toggleNav(false)}>  Home </NavLink>
                             </NavItem>
                             <NavItem id="items">
+                            <NavLink to='/project'  onClick={()=>toggleNav(false)}>  Project</NavLink>
+                            </NavItem > 
+                            <NavItem id="items">
                             <NavLink to='/about' onClick={()=>toggleNav(false)}>About Us</NavLink>
                             </NavItem >
                             <NavItem id="items">
-                            <NavLink to='/demo'  onClick={()=>toggleNav(false)}>  Project</NavLink>
-                            </NavItem > 
-                            <NavItem id="items">
                             <NavLink to='/contact'  onClick={()=>toggleNav(false)}>  Contact Us</NavLink>
                             </NavItem > 
+                        
+                        </Nav>
+
+                        <Nav className='ml-auto'  id='nav-items' >
+                            <NavItem id="items">
+                              <NavLink to='/' onClick={()=>toggleNav(false)}>  Sign In </NavLink>
+                            </NavItem>
+                            <NavItem id="items">
+                              <NavLink to='/' onClick={()=>toggleNav(false)}>  Register </NavLink>
+                            </NavItem>
+                     
                         
                         </Nav>
                 

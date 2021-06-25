@@ -3,6 +3,8 @@ import React from 'react'
 // import About from './About';
 // import Demo from './Demo';
 import MainPage from './MainPage'
+import Calculator from './Calculator';
+import Header from './Header';
 
 
 const Main = () => {
@@ -10,10 +12,14 @@ const Main = () => {
         <div>
           
         
+          <Header></Header>
             <Switch>
+                
             {/* <Route path="/about" component={About}/>     */}
             {/* <Route path="/demo" component={Demo}/>  */}
+            <Route path="/calculate" component={Calculator}/> 
             <Route path="/" component={MainPage}/> 
+    
             
             </Switch>
            

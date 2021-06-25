@@ -5,7 +5,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: rgb(29, 38, 44);
+    background-color:white;
     
   }
   
@@ -14,9 +14,9 @@ body {
       monospace;
   }
   
-  
   #navbar{
     margin-top: 20px;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.5);
   }
   
   #logo-cont{
@@ -40,17 +40,21 @@ body {
   
   #items a{
     margin-right: 50px;
-    color: white;
+    color: black;
     font-family: 'Days One', sans-serif;
     text-decoration: none;
     font-size: 20px;
   }
+
+
   
   #items a:hover{
-    color:#FEB557;
+    color:green;
   }
   
   /* **************Landing Section******************** */
+ 
+ 
   #landing-cont {
   margin-top: 100px;
   margin-left: 50px;
@@ -58,13 +62,72 @@ body {
 
 
   #landing-cont h1{
-    color:#FEB557 ;
+    color:rgb(56, 155, 56) ;
     font-size: 2em;
   }
 
   #landing-cont h2{
-    color:white ;
+    color:black ;
     font-size: 1.5em;
     margin-top:40px ;
   }
 
+#landing-btn {
+  margin-top: 50px;
+  margin-right: 20px;
+  width: 200px;
+  font-family: 'Bungee', cursive;
+  background-color: black;
+}
+
+#landing-btn2{
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 420px;
+  font-family: 'Bungee', cursive;
+  background-color: #ff9812;
+}
+
+
+#landing-cont2{
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 60px;
+}
+
+#landing-btn a{
+  text-decoration: none;
+  color: white;
+  }
+
+#landing-btn2 a{
+text-decoration: none;
+color: white;
+}
+  
+  /* **************Landing Section******************** */
+    
+  /* **************Calculator Section******************** */
+
+#cal-cont {
+    margin-top: 50px;
+    margin-left: 50px;
+    }
+#cal-cont2 {
+      margin-left: 50px;
+      }
+
+ #cal-cont h1{
+  color:rgb(56, 155, 56) ;
+  font-size: 2em;
+ }
+
+ #cal-cont2 p{
+  color:black ;
+  font-size: 1em;
+  margin-top:40px ;
+}
+
+#form-cont{
+  margin-top: 50px;
+}
