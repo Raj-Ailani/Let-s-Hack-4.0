@@ -1,30 +1,24 @@
 import React from 'react'
-import { Container,Row,Col,Button } from 'reactstrap'
-import {  Link} from 'react-router-dom';
-import ReactPlayer from 'react-player'
+import { Container} from 'reactstrap'
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
 
 const Landing = () => {
     return (
-        <div>
-            <Container fluid>
-                <Row>
-                    <Col id='landing-cont'>
-                    <h1>Lorem ipsum dolor sit amet.</h1>
-                    <h2>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h2>
-                    <Container fluid>
-                    <Link to='/project'>  <Button id='landing-btn'>About Project</Button></Link>
-                    <Link to='/about'> <Button id='landing-btn'>About Us</Button></Link>
-                    </Container>
-                    <Container fluid>
-                    <Link to='/calculate'>   <Button id='landing-btn2'>Calculate Your Bill</Button></Link>
-                    </Container>
-                    </Col>
-                    <Col id='landing-cont2'>
-                    <ReactPlayer url='https://www.youtube.com/watch?v=hw2_hEMgE4o&ab_channel=GreenPowerEnergy'  width='100%' />
-                    </Col>
-                </Row>
-            </Container>
-        </div>
+        <div id='img-cont'>
+        
+        <Container fluid id='title-cont'>
+        <Fade bottom > <h1>Let's Hack 4.0</h1></Fade> 
+        <Fade bottom >  <h2>Solar Meter Energy Calculator</h2></Fade>
+        </Container>
+        <Container fluid id='button-cont'>
+      <Link to='/calculate'>  <Button  variant="primary" >CALCULATE YOUR BILL</Button></Link>
+        </Container>
+      
+      
+
+       </div>
     )
 }
 

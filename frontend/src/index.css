@@ -1,3 +1,8 @@
+html{
+  
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,12 +25,13 @@ body {
   }
   
   #logo-cont{
-    width: 100px;
-    margin: 0px;
+    width: 80px;
+    margin-right: 50px;
     
   }
   
-  #logo{
+  
+  .logo{
     width: 100%;
     object-fit: contain;
   }
@@ -44,72 +50,143 @@ body {
     font-family: 'Days One', sans-serif;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
   }
 
 
   
   #items a:hover{
-    color:green;
+    color:rgb(255, 187, 0);
   }
   
-  /* **************Landing Section******************** */
- 
- 
-  #landing-cont {
-  margin-top: 100px;
-  margin-left: 50px;
+  /* **************Main Section******************** */
+  #img-cont{
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 850px;
+    background-image: url('main.jpg');
+    background-repeat:no-repeat;
+    background-size:100% auto;
   }
 
-
-  #landing-cont h1{
-    color:rgb(56, 155, 56) ;
-    font-size: 2em;
+  
+  #title-cont h1{
+    color: white;
+    position: absolute;
+    top:40%;
+    left: 5%;
+    font-size: 60px;
+    font-family: 'Merriweather', serif;
   }
 
-  #landing-cont h2{
-    color:black ;
-    font-size: 1.5em;
-    margin-top:40px ;
+  #title-cont h2{
+    color: white;
+    position: absolute;
+    top:51%;
+    left: 5%;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
   }
+  
+  #button-cont button{
+    font-family: 'Merriweather', serif;
+    color: white;
+    position: absolute;
+    top:60%;
+    left: 5%;    
+    width: 400px;
 
-#landing-btn {
+  }
+/* About Project */
+
+#about-project{
   margin-top: 50px;
-  margin-right: 20px;
-  width: 200px;
-  font-family: 'Bungee', cursive;
-  background-color: black;
+  font-family: 'Merriweather', serif;
 }
 
-#landing-btn2{
-  margin-top: 20px;
-  margin-right: 20px;
-  width: 420px;
-  font-family: 'Bungee', cursive;
-  background-color: #ff9812;
+#about-project h1{
+  text-align: center;
+}
+
+#about-project h3{
+  margin-top: 30px;
 }
 
 
-#landing-cont2{
-  margin-top: 100px;
-  margin-left: 50px;
-  margin-right: 60px;
-}
 
-#landing-btn a{
-  text-decoration: none;
-  color: white;
-  }
-
-#landing-btn2 a{
-text-decoration: none;
-color: white;
-}
+#about-project p{
+  margin-top: 30px;
   
-  /* **************Landing Section******************** */
+}
+
+#about-us{
+  font-family: 'Merriweather', serif;
+  background-color: rgb(143, 143, 143);
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+
+#about-us p{
+  margin-top: 30px;
+}
+
+
+#test p{
+  margin-top: 20px;
+} 
+
+#arrow {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+#arrow p {
+text-decoration: none;
+color: black;
+}
+
+
+
+#arrow img {
+
+width: 30px;
+margin-left: 10px;
+}
+
+
+#future-work{
+  margin-top: 50px;
+  font-family: 'Merriweather', serif;
+}
+#future-work h1{
+text-align: center;
+}
+
+#future-work p{
+  margin-top: 30px;
+
+}
+
+#side-images{
+  width: 100%;
+  margin-top: 30px;
+}
+
+  
+  /* **************Main Section******************** */
     
   /* **************Calculator Section******************** */
 
 #cal-cont {
+  font-family: 'Merriweather', serif;
     margin-top: 50px;
     margin-left: 50px;
     }

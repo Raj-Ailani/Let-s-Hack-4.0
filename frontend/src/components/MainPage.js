@@ -1,16 +1,21 @@
 import React from 'react'
-import Header from './Header'
-import Landing  from './Landing'
 
-
+import Landing from './Landing';
+import AboutProject from './AboutProject'
+import AboutUs from './AboutUs';
+import FutureWork from './FutureWork';
 
 const MainPage = () => {
 
 
     return (
-        <div>
+        <div>    
             <Landing></Landing>
+            <AboutProject></AboutProject>
+            <FutureWork></FutureWork>
+            <AboutUs></AboutUs>
         </div>
+ 
     )
 }
 
