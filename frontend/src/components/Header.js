@@ -31,13 +31,13 @@ const Header = () => {
                               <NavLink to='/' onClick={()=>toggleNav(false)}>  Home </NavLink>
                             </NavItem>
                             <NavItem id="items">
-                            <a href='#about-project'  onClick={()=>toggleNav(false)}>  Project </a>
+                            <a href='/calculate'  onClick={()=>toggleNav(false)}>  Project </a>
                             </NavItem > 
                             <NavItem id="items">
-                            <a href='#future-work'  onClick={()=>toggleNav(false)}>Future Work</a>
+                            <a href='/#future-work'  onClick={()=>toggleNav(false)}>Future Work</a>
                             </NavItem >
                             <NavItem id="items">
-                            <a href='#about-us'  onClick={()=>toggleNav(false)}>About Us</a>
+                            <a href='/#about-us'  onClick={()=>toggleNav(false)}>About Us</a>
                             </NavItem >
                        
                         

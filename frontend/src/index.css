@@ -219,3 +219,69 @@ text-align: center;
  margin-left: 30px;
  
 }
+
+#meter-cont{
+  font-family: 'Merriweather', serif;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 5px solid rgba(255, 166, 0, 0.89);
+  border-top: 5px solid rgba(255, 166, 0, 0.89);
+}
+
+#meter-cont h3{
+  border-bottom: 2px solid black;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+  margin-top: 50px;
+  
+}
+
+#bill-cont{
+  font-family: 'Merriweather', serif;
+  margin-top: 50px;
+ 
+}
+
+
+#bill-cont h3{
+  border-bottom: 2px solid black;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+  margin-top: 50px;
+}
+
+#bill-row{
+  margin-top: 10px;
+  border-bottom:2px dotted;
+}
+
+#left-col{
+  text-align: left;
+}
+#center-col{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+#right-col{
+  text-align: right;
+}
+
+#checkpoint-row{
+  margin-top: 10px;
+  border-bottom:2px solid;
+  background-color: grey;
+}
+
+#note{
+  font-family: 'Merriweather', serif;
+  margin-top: 40px;
+}
+
+#note h6{
+  font-family: 'Merriweather', serif;
+  margin-top: 40px;
+  color: rgba(255, 166, 0, 0.89);
+}
