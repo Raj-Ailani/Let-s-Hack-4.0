@@ -201,10 +201,21 @@ text-align: center;
 
  #cal-cont2 p{
   color:black ;
-  font-size: 1em;
+  font-size: 1.1em;
   margin-top:40px ;
 }
 
 #form-cont{
+  font-family: 'Merriweather', serif;
   margin-top: 50px;
+}
+
+#radio-group{
+  margin-bottom: 30px;
+  
+ }
+
+#radio{
+ margin-left: 30px;
+ 
 }

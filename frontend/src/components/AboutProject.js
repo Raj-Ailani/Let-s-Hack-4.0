@@ -11,10 +11,10 @@ const AboutProject = () => {
         <Container>
           <Row>
             <Col>
-            <img id='side-images' src='/assets/main-img.jpg' alt='image'></img>
+            <img id='side-images' src='/assets/main-img.jpg' alt='sideImages'></img>
             </Col>
             <Col>
-            <img id='side-images' src='/assets/main-img.jpg' alt='image'></img>
+            <img id='side-images' src='/assets/main-img.jpg' alt='sideImages'></img>
             </Col>
           </Row>
         </Container>
