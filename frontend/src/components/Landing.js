@@ -6,8 +6,7 @@ import Fade from 'react-reveal/Fade';
 
 const Landing = () => {
     return (
-        <div id='img-cont'>
-        
+        <Container fluid id='img-cont'>
         <Container fluid id='title-cont'>
         <Fade bottom > <h1>Let's Hack 4.0</h1></Fade> 
         <Fade bottom >  <h2>Solar Meter Energy Calculator</h2></Fade>
@@ -15,10 +14,7 @@ const Landing = () => {
         <Container fluid id='button-cont'>
       <Link to='/calculate'>  <Button  variant="primary" >CALCULATE YOUR BILL</Button></Link>
         </Container>
-      
-      
-
-       </div>
+       </Container>
     )
 }
 

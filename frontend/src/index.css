@@ -70,31 +70,33 @@ body {
     background-size:100% auto;
   }
 
-  
+
   #title-cont h1{
     color: white;
-    position: absolute;
-    top:40%;
-    left: 5%;
+    padding-top:150px ;
+    padding-left:50px ;
     font-size: 60px;
     font-family: 'Merriweather', serif;
   }
 
   #title-cont h2{
     color: white;
-    position: absolute;
-    top:51%;
-    left: 5%;
+    padding-left:50px ;
     font-size: 30px;
     font-family: 'Merriweather', serif;
   }
   
+  #button-cont{
+    padding-left: 70px;
+    margin-top:30px ;
+  }
+
+
   #button-cont button{
     font-family: 'Merriweather', serif;
     color: white;
     position: absolute;
-    top:60%;
-    left: 5%;    
+  
     width: 400px;
 
   }
