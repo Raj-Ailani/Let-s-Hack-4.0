@@ -17,12 +17,14 @@ const Header = () => {
    
 
                 <Container fluid>
+                    <Nav  className='mr-auto' >
                 <Container id='logo-cont'>
                             <NavLink to="/home">
                                 <img src="/assets/logo.png" alt="logo" className="logo"></img>
                              
                             </NavLink>
                  </Container>
+                 </Nav>
                     <NavbarToggler id='toggle' onClick={()=>toggleNav(!isNavOpen)}>Menu <i className='fa fa-bars'></i></NavbarToggler>
         
                     <Collapse isOpen={isNavOpen} navbar>

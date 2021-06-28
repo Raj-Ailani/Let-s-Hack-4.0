@@ -187,7 +187,7 @@ const form = () =>{
   const BillDetail = () =>{
     return(
       <div>   
-         <Container id='meter-cont'>
+         <Container className='d-none d-lg-block d-xl-none d-xl-block' id='meter-cont'>
          <h3>METER DETAILS</h3>
          <Row id='bill-row'>
           <Col id='center-col' md={3}><b>Meter</b></Col>

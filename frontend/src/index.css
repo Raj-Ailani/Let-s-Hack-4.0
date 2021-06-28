@@ -39,39 +39,12 @@ body {
     color: black;
   }
   
-  #items{
-    margin-left: 0px;
-    padding: 0px;
-  }
   
-  #items a{
-    margin-right: 50px;
-    color: black;
-    font-family: 'Days One', sans-serif;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-
-  
-  #items a:hover{
-    color:rgb(255, 187, 0);
-  }
   
   /* **************Main Section******************** */
-  #img-cont{
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
-    height: 850px;
-    background-image: url('main.jpg');
-    background-repeat:no-repeat;
-    background-size:100% auto;
-  }
 
 
-  #title-cont h1{
+  /* #title-cont h1{
     color: white;
     padding-top:150px ;
     padding-left:50px ;
@@ -89,17 +62,16 @@ body {
   #button-cont{
     padding-left: 70px;
     margin-top:30px ;
-  }
+  } */
 
 
-  #button-cont button{
+  /* #button-cont button{
     font-family: 'Merriweather', serif;
     color: white;
-    position: absolute;
   
     width: 400px;
 
-  }
+  } */
 /* About Project */
 
 #about-project{
@@ -187,25 +159,7 @@ text-align: center;
     
   /* **************Calculator Section******************** */
 
-#cal-cont {
-  font-family: 'Merriweather', serif;
-    margin-top: 50px;
-    margin-left: 50px;
-    }
-#cal-cont2 {
-      margin-left: 50px;
-      }
 
- #cal-cont h1{
-  color:rgb(56, 155, 56) ;
-  font-size: 2em;
- }
-
- #cal-cont2 p{
-  color:black ;
-  font-size: 1.1em;
-  margin-top:40px ;
-}
 
 #form-cont{
   font-family: 'Merriweather', serif;
@@ -291,4 +245,174 @@ text-align: center;
 #calculate-button{
   margin-top: 50px;
   text-align: center;
+}
+
+
+
+  /* ************** Media Query ******************** */
+
+  @media(min-width:768px){
+    #items{
+      margin-left: 0px;
+      padding: 0px;
+    }
+    
+    #items a{
+      margin-right: 50px;
+      color: black;
+      font-family: 'Days One', sans-serif;
+      text-decoration: none;
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+  
+    
+    #items a:hover{
+      color:rgb(255, 187, 0);
+    }
+
+
+
+    #img-cont{
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      height: 850px;
+      background-image: url('main.jpg');
+      background-repeat:no-repeat;
+      background-size:100% auto;
+    }
+  
+  
+  
+    #title-cont h1{
+      color: white;
+      padding-top:150px ;
+      padding-left:50px ;
+      font-size: 60px;
+      font-family: 'Merriweather', serif;
+    }
+  
+    #title-cont h2{
+      color: white;
+      padding-left:50px ;
+      font-size: 30px;
+      font-family: 'Merriweather', serif;
+    }
+    
+    #button-cont{
+      padding-left: 70px;
+      margin-top:30px ;
+    }
+  
+  
+    #button-cont button{
+      font-family: 'Merriweather', serif;
+      color: white;    
+      width: 400px;
+  
+  }
+
+  #cal-cont {
+    font-family: 'Merriweather', serif;
+      margin-top: 50px;
+      margin-left: 50px;
+      }
+  #cal-cont2 {
+        margin-left: 50px;
+        }
+  
+   #cal-cont h1{
+    color:rgb(56, 155, 56) ;
+    font-size: 2em;
+   }
+  
+   #cal-cont2 p{
+    color:black ;
+    font-size: 1.1em;
+    margin-top:40px ;
+  }
+}
+
+
+@media(max-width:768px){
+  #nav-items{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #items{
+    margin-left: 0px;
+    padding: 0px;
+  }
+  
+  #items a{
+    margin-right: 50px;
+    color: black;
+    font-family: 'Days One', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+  
+  #items a:hover{
+    color:rgb(255, 187, 0);
+  }
+
+
+
+  #img-cont{
+    width: 100%;
+  }
+
+
+  #cal-cont {
+    font-family: 'Merriweather', serif;
+      margin-top: 50px;
+      }
+
+   #cal-cont h1{
+    color:rgb(56, 155, 56) ;
+    font-size: 2em;
+   }
+  
+   #cal-cont2 p{
+    color:black ;
+    font-size: 1.1em;
+    margin-top:40px ;
+  }
+
+
+
+  #title-cont h1{
+    color: black;
+    padding-top:50px ;
+ 
+    font-size: 60px;
+    font-family: 'Merriweather', serif;
+  }
+
+  #title-cont h2{
+    color: black;
+
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+  }
+  
+  #button-cont{
+   
+    margin-top:30px ;
+    margin-bottom: 50px;
+  }
+
+
+  #button-cont button{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: white;
+}
 }
