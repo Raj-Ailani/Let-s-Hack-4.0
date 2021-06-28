@@ -2,8 +2,7 @@ import {React,useState} from 'react'
 import { Container } from 'reactstrap'
 import {Form,Button,Row,Col, FormGroup, FormLabel, FormControl} from 'react-bootstrap'
 import { Radio, RadioGroup} from 'react-radio-group'
-import {Link} from 'react-router-dom'
-
+import { Modal} from 'react-bootstrap';  
 
 const Calculator = () => {
   const [tariff,setTariff]=useState('')
@@ -15,6 +14,10 @@ const Calculator = () => {
   const [presentImportUnits,setPresentImportUnits]=useState('')
   const [presentExportUnits,setPresentExportUnits]=useState('')
   const [bill,setBill]=useState({})
+  const [pastReading, setPastReading] = useState(false);
+  const [presentReading, setPresentReading] = useState(false);
+  
+ 
   const torrentTariff = {
     fixedChargePerMonth:25,
     firstFiftyUnits : 3.20,
@@ -22,7 +25,16 @@ const Calculator = () => {
     remaining : 4.90,
     govtDuty:15
    }
+
+
+const handlePastReadingClose = () => setPastReading(false);
+const handlePastReadingShow = () => setPastReading(true);
+
+
+const handlePresentReadingClose = () => setPresentReading(false);
+const handlePresentReadingShow = () => setPresentReading(true); 
    
+
 const submitHandler =(e)=>{
   
     e.preventDefault()
@@ -72,8 +84,8 @@ const submitHandler =(e)=>{
     
     return result
   }
-  // 
- 
+
+  //
 
 const form = () =>{
     return(
@@ -121,19 +133,21 @@ const form = () =>{
           </RadioGroup>
           </Col>
           <Col md={12}>
-            <p><b>Past Bill Reading:-</b></p>
+            <p><b>Past Bill Reading :-</b> &ensp;<i onClick={handlePastReadingShow} className='fa fa-question-circle'></i></p>
           </Col>
           <Col md={6}>
             <FormGroup controlId="pastImport">
-             <FormLabel>Import Units</FormLabel>
-             <FormControl type="text" value={pastImportUnits}
+             <FormLabel>Import Units &ensp;</FormLabel>
+             
+              <FormControl type="text" value={pastImportUnits}
               onChange={(e)=>setPastImportUnits(e.target.value)}/>
             </FormGroup>
           </Col>
   
           <Col md={6}>
-            <FormGroup controlId="field1">
-             <FormLabel>Export Units</FormLabel>
+            <FormGroup controlId="pastExpoort">
+             <FormLabel>Export Units </FormLabel>
+          
              <FormControl  type="text" value={pastExportUnits}
               onChange={(e)=>setPastExportUnits(e.target.value)}>
              </FormControl>
@@ -141,19 +155,20 @@ const form = () =>{
           </Col>
   
           <Col md={12}>
-            <p><b>Present Meter Reading:-</b></p>
+            <p><b>Present Meter Reading:-</b> &ensp; <i onClick={handlePresentReadingShow} className='fa fa-question-circle'></i></p>
           </Col>
           <Col md={6}>
-            <FormGroup controlId="field1">
-             <FormLabel>Import Units</FormLabel>
+            <FormGroup controlId="presentImport">
+             <FormLabel>Import Units  &ensp;</FormLabel>
              <FormControl type="text" value={presentImportUnits}
               onChange={(e)=>setPresentImportUnits(e.target.value)}/>
             </FormGroup>
           </Col>
   
           <Col md={6}>
-            <FormGroup controlId="field1">
-             <FormLabel>Export Units</FormLabel>
+            <FormGroup controlId="presentExport">
+             <FormLabel>Export Units  &ensp;</FormLabel>
+            
              <FormControl type="text" value={presentExportUnits}
               onChange={(e)=>setPresentExportUnits(e.target.value)}>
              </FormControl>
@@ -247,6 +262,34 @@ const form = () =>{
 
     )
   }
+
+  const PastReadingModel = () =>{
+    return(
+      <Modal show={pastReading} onHide={handlePastReadingClose}>
+      <Modal.Header closeButton>
+        <Modal.Title>About Past Reading</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+      <Modal.Footer>
+     </Modal.Footer>
+    </Modal>
+    )
+  }
+
+  const PresentReadingModel = () =>{
+    return(
+      <Modal show={presentReading} onHide={handlePresentReadingClose}>
+      <Modal.Header closeButton>
+        <Modal.Title>About Present Reading</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+      <Modal.Footer>
+     </Modal.Footer>
+    </Modal>
+    )
+  }
+
+
     return (
         <div>
             <Container fluid id='cal-cont'>
@@ -255,8 +298,14 @@ const form = () =>{
             <Container id='cal-cont2'>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper purus sed nulla consequat, quis sodales risus suscipit. 
                     Vivamus quis lorem est. Donec placerat et tellus id semper. Aenean a cursus velit. Pellentesque scelerisque libero ut velit maximus, 
-                    hendrerit dictum tristique.</p></Container>
-        {}
+                    hendrerit dictum tristique.</p>
+    
+            <PastReadingModel/>
+            <PresentReadingModel />
+
+
+            </Container>
+       
           {Object.keys(bill).length===0? form() : BillDetail()}
         </div>
      )
