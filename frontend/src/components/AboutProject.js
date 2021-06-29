@@ -48,14 +48,33 @@ const AboutProject = () => {
 
         </Container>
         
-        
+        <br></br>
     
         <h3>What is Solar Energy?</h3>
        <p> Solar power is energy from the sun that is converted into thermal or electrical energy. It is the cleanest and most abundant renewable energy source available. 
          Solar technologies can harness this energy for a variety of uses, including generating electricity, 
          providing light or a comfortable interior environment, and heating water for domestic, commercial, or industrial use.</p>
          <br></br>
-        
+        <Container>
+          <Row>
+            <Col  md={3}>
+            <div id='stats'> 16% </div>
+            <div id='stats-line'> Solar Photovoltaics Overall Global Consumption</div>
+            </Col>
+            <Col  md={3}>
+            <div id='stats'>60.40 TWh </div>
+            <div id='stats-line'>Annual Solar Power Generation In 2020-21</div>
+            </Col>
+            <Col md={3}>
+            <div id='stats'>10 KWh</div>
+            <div id='stats-line'>Electricity per square foot. is produced by Solar panels</div>
+            </Col>
+            <Col md={3}>
+            <div id='stats'>₹ 5,500 </div>
+            <div id='stats-line'>Saved monthly with the installation of a 5 kW rooftop solar system</div>
+            </Col>
+          </Row>
+        </Container>
 
         <h3>What is Net Metering?</h3>
        <p> Net metering is a mechanism which allows domestic or commercial users who generate their own electricity using solar panels or photovoltaic systems to export their surplus energy back to the grid.
