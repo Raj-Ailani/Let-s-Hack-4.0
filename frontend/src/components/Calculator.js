@@ -133,7 +133,7 @@ const form = () =>{
           </RadioGroup>
           </Col>
           <Col md={12}>
-            <p><b>Past Bill Reading :-</b> &ensp;<i onClick={handlePastReadingShow} className='fa fa-question-circle'></i></p>
+            <p><b>Previous Bill Reading :-</b> &ensp;<i onClick={handlePastReadingShow} className='fa fa-question-circle'></i></p>
           </Col>
           <Col md={6}>
             <FormGroup controlId="pastImport">
@@ -267,9 +267,9 @@ const form = () =>{
     return(
       <Modal show={pastReading} onHide={handlePastReadingClose}>
       <Modal.Header closeButton>
-        <Modal.Title>About Past Reading</Modal.Title>
+        <Modal.Title>About Past BILL Reading</Modal.Title>
       </Modal.Header>
-      <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+      <Modal.Body>PENDING...</Modal.Body>
       <Modal.Footer>
      </Modal.Footer>
     </Modal>
@@ -280,9 +280,9 @@ const form = () =>{
     return(
       <Modal show={presentReading} onHide={handlePresentReadingClose}>
       <Modal.Header closeButton>
-        <Modal.Title>About Present Reading</Modal.Title>
+        <Modal.Title>About Present Meter Reading</Modal.Title>
       </Modal.Header>
-      <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+      <Modal.Body>PENDING...</Modal.Body>
       <Modal.Footer>
      </Modal.Footer>
     </Modal>

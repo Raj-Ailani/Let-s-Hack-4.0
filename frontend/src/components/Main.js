@@ -5,7 +5,8 @@ import React from 'react'
 import MainPage from './MainPage'
 import Calculator from './Calculator';
 import Header from './Header';
-
+import LoginScreen from './LoginScreen';
+import RegisterScreen from './RegisterScreen';
 
 const Main = () => {
     return (
@@ -18,6 +19,8 @@ const Main = () => {
             {/* <Route path="/about" component={About}/>     */}
             {/* <Route path="/demo" component={Demo}/>  */}
             <Route path="/calculate" component={Calculator}/> 
+            <Route path="/login" component={LoginScreen}/> 
+            <Route path="/register" component={RegisterScreen}/> 
             <Route path="/" component={MainPage}/> 
     
             
