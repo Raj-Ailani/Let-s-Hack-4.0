@@ -1,6 +1,6 @@
 import React ,{ useState} from 'react'
-import {Link, } from 'react-router-dom'
-import {Form,Button,Row,Col, FormGroup, FormLabel, FormControl, Container} from 'react-bootstrap'
+
+import {Form,Button,Row,Col, FormGroup, FormLabel, FormControl} from 'react-bootstrap'
 import FormContainer from '../components/FormContainer'
 
 const RegisterScreen = () => {
