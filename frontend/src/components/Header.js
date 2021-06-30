@@ -47,10 +47,10 @@ const Header = () => {
 
                         <Nav className='ml-auto'  id='nav-items' >
                             <NavItem id="items">
-                              <NavLink to='/' onClick={()=>toggleNav(false)}>  Sign In </NavLink>
+                              <NavLink to='/login' onClick={()=>toggleNav(false)}>  Sign In </NavLink>
                             </NavItem>
                             <NavItem id="items">
-                              <NavLink to='/' onClick={()=>toggleNav(false)}>  Register </NavLink>
+                              <NavLink to='/register' onClick={()=>toggleNav(false)}>  Register </NavLink>
                             </NavItem>
                      
                         
