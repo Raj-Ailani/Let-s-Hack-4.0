@@ -154,6 +154,23 @@ text-align: center;
   margin-top: 30px;
 }
 
+#future-work h3{
+  font-size: 1.5em;
+  margin-top: 30px;
+  font-family: 'Merriweather', serif;
+}
+
+#future-work img{
+  width: 100%;
+}
+
+#about-us h3{
+  font-size: 1.2em;
+  margin-top: 30px;
+  font-family: 'Merriweather', serif;
+}
+
+
   
   /* **************Main Section******************** */
     
